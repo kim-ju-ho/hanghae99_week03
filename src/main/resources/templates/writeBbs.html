@@ -22,9 +22,9 @@
 
 <h1>BBS</h1>
 <section class="tableSection">
-    <form th:action="@{/api/bbs/write}" th:object="${requestDto}" method="post" >
+    <form th:action="@{/api/bbs/write}"  th:object="${requestDto}" method="post" >
     <table class="table">
-        <tbody class="trSection">
+        <tbody>
         <tr>
             <td>제목</td>
             <td><input type="text" th:field="*{title}"></td>
@@ -37,11 +37,8 @@
             <td>내용</td>
             <td><input type="text" th:field="*{contents}"></td>
         </tr>
-
         </tbody>
         <button type="submit">등록</button>
-
-
     </table>
     </form>
 

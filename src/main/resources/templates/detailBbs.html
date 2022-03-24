@@ -25,6 +25,8 @@
 
 
 <h1>BBS</h1>
+<button type="button" th:onclick="'deleteBbs('+${bbsOne.id}+')'">삭제하기</button>
+<button type="button" th:onclick="|location.href='@{/api/bbs/update/{id}(id=${bbsOne.id})}'|">수정하기</button>
 <section class="tableSection">
     <table class="table">
         <tbody class="trSection">
